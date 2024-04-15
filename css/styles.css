@@ -52,6 +52,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 address {
   font-style: normal;
@@ -225,6 +226,15 @@ main-button:focus {
 .strategy-item {
   width: calc((100% - var(--indent-col) * (var(--items) - 1)) / var(--items));
 }
+.strategy-wrapper {
+  background-color: var(--cloud);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+  height: 112px;
+}
+.strategy-img {
+}
 .strategy-title {
   margin-bottom: 8px;
 }
@@ -313,6 +323,13 @@ main-button:focus {
   font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--slate);
+  margin-bottom: 8px;
+}
+.socials-team {
+  display: flex;
+  gap: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .main-section-port {
   padding: 96px 0 120px;
