@@ -13,6 +13,7 @@
   --white: rgba(255, 255, 255);
   --dairy: #fcfcfc;
   --light-gray: rgb(231, 233, 252);
+  --mod-col: rgba(0, 0, 0, 0.1);
 }
 
 :root {
@@ -607,6 +608,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--light-gray);
+  background-color: var(--cornflower);
   border-radius: 50%;
+  border: 2px solid var(--mod-col);
 }
