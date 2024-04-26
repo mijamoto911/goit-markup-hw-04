@@ -607,15 +607,30 @@ button {
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   color: var(--white);
-}
-input::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: var(--white);
   padding-left: 16px;
 }
+
+.subscribe-email::placeholder {
+  color: var(--white);
+}
+.subscribe-email + .subscribe-label,
+.subscribe-email:not(:placeholder-shown) + .subscribe-label {
+  transform: translateY(-190%);
+}
+.subscribe-email::placeholder {
+  opacity: 1;
+  transition: opacity 200ms ease-in 0s;
+}
+.subscribe-email:focus::placeholder {
+  color: var(--green);
+  opacity: 0.3;
+  transition-delay: 300ms;
+}
+
 .subscribe-button {
   display: flex;
   justify-content: center;
@@ -640,8 +655,6 @@ input::placeholder {
   background: var(--ocean);
 }
 
-.subscribe-icon {
-}
 /* #region Modal */
 .backdrop {
   position: fixed;
