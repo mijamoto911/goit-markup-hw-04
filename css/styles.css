@@ -593,7 +593,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--white);
 }
-.label-primary {
+.subscribe-field {
   display: flex;
   gap: 24px;
   align-items: baseline;
