@@ -617,10 +617,7 @@ button {
 .subscribe-email::placeholder {
   color: var(--white);
 }
-.subscribe-email + .subscribe-label,
-.subscribe-email:not(:placeholder-shown) + .subscribe-label {
-  transform: translateY(-190%);
-}
+
 .subscribe-email::placeholder {
   opacity: 1;
   transition: opacity 200ms ease-in 0s;
